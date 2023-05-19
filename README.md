@@ -4,7 +4,7 @@ Docker is an open-source platform that allows you to **automate the deployment a
 
 Here are some key concepts and components of Docker:
 
-![Docker](img/docker.png)
+![Docker](img/docker2.png)
 
 1. **Containers**:
 2. **Images**:
