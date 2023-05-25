@@ -6,7 +6,9 @@ Docker is an open-source platform that allows you to *automate the deployment an
 
 Here are some key concepts and components of Docker:
 
-1. **Containers**: Docker uses containers to encapsulate applications and their dependancies. A container is a lightweight, standalone *executable package* that includes everything needed to run an application, such as code, runtime, system tools, libraries, and settings.
+1. **Containers**: Docker uses containers to encapsulate applications and their dependancies.\
+A container is a *running instance of an image*.\
+A container is a lightweight, standalone *executable package* that includes everything needed to run an application, such as code, runtime, system tools, libraries, and settings.
 
 2. **Images**: Containers are created from Docker images. An image is a *read-only template* that contains the instructions for creating a container. It includes the application code and all the dependencies needed to run the application. Images can be built from scratch or based on existing images available on Docker Hub or private repositories.
 
