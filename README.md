@@ -48,9 +48,12 @@ Docker simplifies the application deployment process by packaging the applicatio
 
 - `docker images` = List all Docker images.
 - `docker ps` = List running containers.
+	- `-a` or `--all` = Lists all containers (stopped and running).
 - `docker pull {image-name}` = Pulling image {image-name} from Docker Hub.
 - `docker run {image-name}:{image-tag}` = Creates a container from given image and starts it. Creates a new container. Doesn't re-use previous container.
 	- `-d` or `--detach` = Runs a container in background and prints the container ID.
 	- `-p {HOST_PORT}:{CONTAINER_PORT}` or `--publish {HOST_PORT}:{CONTAINER_PORT}` = Publish a container's port to the host.
+	- `--name {container-name}`: Assign a name to the container.
 - `docker logs {container-ID}` = View logs from service running inside the container (which are present at the time of execution).
 - `docker stop {container-ID}` = Stop one or more running containers.
+- `docker start {container-ID}`: = Start one or more stopped containers.
