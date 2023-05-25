@@ -57,3 +57,5 @@ Docker simplifies the application deployment process by packaging the applicatio
 - `docker logs {container-ID}` = View logs from service running inside the container (which are present at the time of execution).
 - `docker stop {container-ID}` = Stop one or more running containers.
 - `docker start {container-ID}`: = Start one or more stopped containers.
+- `docker build -t {image-name}:{image-tag} .` =
+	- `-t` or `--tag` = Sets a name and optionally a tag in the "name:tag" format.
