@@ -4,7 +4,7 @@ Docker is an open-source platform that allows you to *automate the deployment an
 
 ![Docker](img/docker2.png)
 
-Here are some key concepts and components of Docker:
+###### Here are some key concepts and components of Docker:
 
 1. **Containers**: Docker uses containers to encapsulate applications and their dependancies.\
 A container is a *running instance of an image*.\
@@ -33,3 +33,7 @@ Benefits of using Docker:
 - **Resource efficiency**: Containers are lightweight, as they share the host system's kernel, enabling more efficient resource utilization compared to virtual machines. 
 
 - **Rapid deployment**: Docker simplifies the application deployment process by packaging the application and its dependencies into containers, allowing faster and more reliable deployment.
+
+###### Commands:
+
+- `docker images` = List all Docker images
