@@ -83,4 +83,32 @@ Bind the container's port to the host's port to make the service available to th
 	- Like changing into a directory: `cd ...`
 - `CMD`
 	- The instruction that is to be executed when a Docker container starts
-	- There can **only** be **one "CMD" instruction** in a Dockerfile 
+	- There can **only** be **one "CMD" instruction** in a Dockerfile
+
+ 
+###### Sample Dockerfile:
+
+- Host directory tree:
+	```
+	.
+	|_______src/
+	|	|_______server.js
+	|
+	|_______Dockerfile
+	|
+	|_______package.json
+	
+	```
+- Dockerfile content:
+	```
+	FROM node:19-alpine
+
+	COPY package.json /app/
+	COPY src /app/
+
+	WORKDIR /app
+
+	RUN npm install
+
+	CMD ["node", "server.js"]
+	```
