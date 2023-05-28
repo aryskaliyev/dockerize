@@ -49,6 +49,11 @@ Docker simplifies the application deployment process by packaging the applicatio
 - **Port Binding**:\
 Bind the container's port to the host's port to make the service available to the outside world. Only one service can run on a specific port on the host, e.g. only one service can run on port 9000.
 
+- **Remember**:\
+A Docker image consists of layers.
+	- **Each instruction in the Dockerfile creates one layer.**
+	- These layers are stacked & each one is a delta of the changes from the previous layer.
+
 ##### Commands:
 
 - `docker images` = List all Docker images.
@@ -64,6 +69,7 @@ Bind the container's port to the host's port to make the service available to th
 - `docker start {container-ID}`: = Start one or more stopped containers.
 - `docker build -t {image-name}:{image-tag} .` =
 	- `-t` or `--tag` = Sets a name and optionally a tag in the "name:tag" format.
+- `docker build -t {image-name}:{image-tag} {path}` = Builds a Docker image from a Dockerfile. 
 
 
 ##### Structure of Dockerfile:
