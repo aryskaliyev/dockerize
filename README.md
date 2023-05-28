@@ -93,9 +93,7 @@ Bind the container's port to the host's port to make the service available to th
 .
 |___src/
 |   |___server.js
-|
 |___Dockerfile
-|
 |___package.json
 
 ```
