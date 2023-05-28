@@ -4,7 +4,7 @@ Docker is an open-source platform that allows you to *automate the deployment an
 
 ![Docker](img/docker2.png)
 
-###### Here are some key concepts and components of Docker:
+##### Here are some key concepts and components of Docker:
 
 1. **Containers**:\
 Docker uses containers to encapsulate applications and their dependancies. A container is a *running instance of an image*. A container is a lightweight, standalone *executable package* that includes everything needed to run an application, such as code, runtime, system tools, libraries, and settings.
@@ -27,7 +27,7 @@ Docker Registry is a repository for storing and distributing Docker images. *Doc
 7. **Orchestration**:\
 *Docker Swarm* and *Kubernetes* are popular orchestration platforms that allow you to manage and scale Docker containers across a cluster of machines. They provide features like container schedulling, load balancing, service discovery, and automaged scaling.
 
-###### Benefits of using Docker:
+##### Benefits of using Docker:
 
 - **Portability**:\
 Docker containers provide a consistent environment, making applications easily portable across different machines, operating systems, an cloud platforms.
@@ -45,11 +45,11 @@ Containers are lightweight, as they share the host system's kernel, enabling mor
 Docker simplifies the application deployment process by packaging the application and its dependencies into containers, allowing faster and more reliable deployment.
 
 
-###### Info:
+##### Info:
 - **Port Binding**:\
 Bind the container's port to the host's port to make the service available to the outside world. Only one service can run on a specific port on the host, e.g. only one service can run on port 9000.
 
-###### Commands:
+##### Commands:
 
 - `docker images` = List all Docker images.
 - `docker ps` = List running containers.
@@ -66,7 +66,7 @@ Bind the container's port to the host's port to make the service available to th
 	- `-t` or `--tag` = Sets a name and optionally a tag in the "name:tag" format.
 
 
-###### Structure of Dockerfile:
+##### Structure of Dockerfile:
 
 - Dockerfiles start from a parent image or **"base image"**
 - It's a Docker image that your image is based on. You choose the base image, **depending on which tools you need** to have available.
@@ -86,7 +86,7 @@ Bind the container's port to the host's port to make the service available to th
 	- There can **only** be **one "CMD" instruction** in a Dockerfile
 
  
-###### Sample Dockerfile:
+##### Sample Dockerfile:
 
 - Host directory tree:
 ```
