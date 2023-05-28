@@ -64,3 +64,12 @@ Bind the container's port to the host's port to make the service available to th
 - `docker start {container-ID}`: = Start one or more stopped containers.
 - `docker build -t {image-name}:{image-tag} .` =
 	- `-t` or `--tag` = Sets a name and optionally a tag in the "name:tag" format.
+
+
+###### Structure of Dockerfile:
+
+- Dockerfiles start from a parent image or **"base image"**
+- It's a Docker image that your image is based on. You choose the base image, **depending on which tools you need** to have available.
+- `FROM`
+	- Dockerfiles **must begin** with a FROM instruction
+	- Build this image from the specified image
