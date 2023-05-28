@@ -73,3 +73,8 @@ Bind the container's port to the host's port to make the service available to th
 - `FROM`
 	- Dockerfiles **must begin** with a FROM instruction
 	- Build this image from the specified image
+- `RUN`
+	- Will execute any command in a shell **inside** the container environment
+- `COPY`
+	- Copies files or directories from **<src>** and adds them to the filesystem of the container at the path **<dest>**
+	- While `RUN` is executed in the container, `COPY` is executed on the host
