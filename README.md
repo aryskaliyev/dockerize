@@ -89,26 +89,22 @@ Bind the container's port to the host's port to make the service available to th
 ###### Sample Dockerfile:
 
 - Host directory tree:
-	```
-	.
-	|_______src/
-	|	|_______server.js
-	|
-	|_______Dockerfile
-	|
-	|_______package.json
-	
-	```
+```
+.
+|___src/
+|	|___server.js
+|
+|___Dockerfile
+|
+|___package.json
+
+```
 - Dockerfile content:
-	```
-	FROM node:19-alpine
-
-	COPY package.json /app/
-	COPY src /app/
-
-	WORKDIR /app
-
-	RUN npm install
-
-	CMD ["node", "server.js"]
-	```
+```
+FROM node:19-alpine
+COPY package.json /app/
+COPY src /app/
+WORKDIR /app
+RUN npm install
+CMD ["node", "server.js"]
+```
