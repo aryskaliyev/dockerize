@@ -78,3 +78,9 @@ Bind the container's port to the host's port to make the service available to th
 - `COPY`
 	- Copies files or directories from **<src>** and adds them to the filesystem of the container at the path **<dest>**
 	- While `RUN` is executed in the container, `COPY` is executed on the host
+- `WORKDIR`
+	- **Sets the working directory** for all following commands
+	- Like changing into a directory: `cd ...`
+- `CMD`
+	- The instruction that is to be executed when a Docker container starts
+	- There can **only** be **one "CMD" instruction** in a Dockerfile 
