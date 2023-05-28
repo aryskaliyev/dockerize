@@ -22,7 +22,7 @@ A Dockerfile is a text file that contains a set of instructions for building a D
 Docker Compose is a tool for defining and running multi-container Docker applications. It uses a YAML file to define the services, networks, and volumes required by an application. Compose simplifies the process of managing complex, interconnected containers as a single unit.
 
 6. **Docker Registry**:\
-Docker Registry is a repository for storing and distributing Docker images. *Docker Hub* is the default public registry provided by Docker, but you can also set up private registries to store images within your organization.
+Docker Registry is a repository for storing and distributing Docker images. *Docker Hub* is the default public registry provided by Docker, but you can also set up private registries to store images within your organization. For example, [Docker Hub](hub.docker.com) -- contains official docker images.
 
 7. **Orchestration**:\
 *Docker Swarm* and *Kubernetes* are popular orchestration platforms that allow you to manage and scale Docker containers across a cluster of machines. They provide features like container schedulling, load balancing, service discovery, and automaged scaling.
@@ -43,6 +43,11 @@ Containers are lightweight, as they share the host system's kernel, enabling mor
 
 - **Rapid deployment**:\
 Docker simplifies the application deployment process by packaging the application and its dependencies into containers, allowing faster and more reliable deployment.
+
+
+###### Info:
+- **Port Binding**:\
+Bind the container's port to the host's port to make the service available to the outside world. Only one service can run on a specific port on the host, e.g. only one service can run on port 9000.
 
 ###### Commands:
 
