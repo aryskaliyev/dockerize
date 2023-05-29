@@ -67,9 +67,12 @@ A Docker image consists of layers.
 - `docker logs {container-ID}` = View logs from service running inside the container (which are present at the time of execution).
 - `docker stop {container-ID}` = Stop one or more running containers.
 - `docker start {container-ID}`: = Start one or more stopped containers.
-- `docker build -t {image-name}:{image-tag} .` =
+- `docker build -t {image-name}:{image-tag} .` = Build the image.
 	- `-t` or `--tag` = Sets a name and optionally a tag in the "name:tag" format.
 - `docker build -t {image-name}:{image-tag} {path}` = Builds a Docker image from a Dockerfile. 
+- `docker rm {container-name | container-ID}` = Remove container
+- `docker image rm {image-name | image-ID}` = Remove image
+ 	- `-f` or `--force` = Force removal of the image. 
 
 
 ##### Structure of Dockerfile:
