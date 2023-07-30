@@ -64,7 +64,7 @@ A Docker image consists of layers.
 	- `-d` or `--detach` = Runs a container in background and prints the container ID.
 	- `-p {HOST_PORT}:{CONTAINER_PORT}` or `--publish {HOST_PORT}:{CONTAINER_PORT}` = Publish a container's port to the host.
 	- `--name {container-name}` = Assign a name to the container.
-  	- `-e, --env list`: Set environment variables.
+  	- `-e, --env list` = Set environment variables.
 - `docker logs {container-ID}` = View logs from service running inside the container (which are present at the time of execution).
 - `docker stop {container-ID}` = Stop one or more running containers.
 - `docker start {container-ID}` = Start one or more stopped containers.
