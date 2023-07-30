@@ -63,11 +63,11 @@ A Docker image consists of layers.
 - `docker run {image-name}:{image-tag}` = Creates a container from given image and starts it. Creates a new container. Doesn't re-use previous container.
 	- `-d` or `--detach` = Runs a container in background and prints the container ID.
 	- `-p {HOST_PORT}:{CONTAINER_PORT}` or `--publish {HOST_PORT}:{CONTAINER_PORT}` = Publish a container's port to the host.
-	- `--name {container-name}`: Assign a name to the container.
+	- `--name {container-name}` = Assign a name to the container.
   	- `-e, --env list`: Set environment variables.
 - `docker logs {container-ID}` = View logs from service running inside the container (which are present at the time of execution).
 - `docker stop {container-ID}` = Stop one or more running containers.
-- `docker start {container-ID}`: = Start one or more stopped containers.
+- `docker start {container-ID}` = Start one or more stopped containers.
 - `docker build -t {image-name}:{image-tag} .` = Build the image.
 	- `-t` or `--tag` = Sets a name and optionally a tag in the "name:tag" format.
 - `docker build -t {image-name}:{image-tag} {path}` = Builds a Docker image from a Dockerfile. 
